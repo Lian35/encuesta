@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Simulador Institucional PVG_2026 - Videovigilancia ECU 911</title>
+<meta name="description" content="Simulador oficial de evaluaciones PVG_2026 - Videovigilancia ECU 911. 66 preguntas reales con explicaciones pedagógicas.">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Inter:wght@400;500&display=swap');
+:root{--primary:#3b82f6;--primary-hover:#2563eb;--success:#10b981;--danger:#ef4444;--bg1:#0f172a;--bg2:#1e1b4b;--card:#fffffff7;--text:#334155;--dark:#0f172a;}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:'Inter',sans-serif;background:linear-gradient(135deg,var(--bg1),var(--bg2));color:var(--text);min-height:100vh;display:flex;align-items:center;justify-content:center;padding:2rem;overflow-x:hidden;}
+h1,h2,h3,h4{font-family:'Outfit',sans-serif;}
+.app{width:100%;max-width:860px;}
+
+/* LANDING */
+#landing{background:rgba(255,255,255,.08);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border:1px solid rgba(255,255,255,.15);border-radius:20px;padding:4rem 3rem;text-align:center;color:white;box-shadow:0 25px 50px -12px rgba(0,0,0,.5);animation:up .6s ease-out;}
+#landing h1{font-size:2.8rem;font-weight:700;line-height:1.2;margin-bottom:.75rem;background:linear-gradient(to right,#60a5fa,#c084fc);-webkit-background-clip:text;-webkit-text-fill-color:transparent;}
+#landing .sub{font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;color:#94a3b8;margin-bottom:.5rem;font-weight:600;}
+#landing p{font-size:1.1rem;font-weight:300;margin-bottom:2rem;color:#cbd5e1;max-width:580px;margin-left:auto;margin-right:auto;}
+.stats{display:flex;gap:1.5rem;justify-content:center;margin-bottom:2.5rem;flex-wrap:wrap;}
+.stat{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.1);border-radius:12px;padding:.9rem 1.4rem;text-align:center;}
+.stat .n{font-size:1.7rem;font-weight:700;color:#60a5fa;font-family:'Outfit',sans-serif;}
+.stat .l{font-size:.75rem;color:#94a3b8;text-transform:uppercase;letter-spacing:.05em;}
+.btn-start{background:linear-gradient(135deg,#3b82f6,#8b5cf6);color:white;border:none;padding:1.1rem 2.8rem;font-size:1.15rem;font-family:'Outfit',sans-serif;font-weight:600;border-radius:50px;cursor:pointer;transition:all .3s;box-shadow:0 10px 15px -3px rgba(59,130,246,.4);position:relative;overflow:hidden;}
+.btn-start:hover{transform:translateY(-3px) scale(1.02);box-shadow:0 20px 25px -5px rgba(59,130,246,.5);}
+
+/* QUIZ */
+#quiz{display:none;}
+.ph{margin-bottom:1.5rem;background:rgba(255,255,255,.06);padding:1rem 1.5rem;border-radius:12px;display:flex;align-items:center;gap:1.5rem;border:1px solid rgba(255,255,255,.1);}
+.pt{color:#94a3b8;font-family:'Outfit',sans-serif;font-weight:600;white-space:nowrap;}
+.pc{flex-grow:1;height:8px;background:rgba(255,255,255,.1);border-radius:4px;overflow:hidden;}
+.pb{height:100%;background:linear-gradient(90deg,#3b82f6,#8b5cf6);width:0%;transition:width .4s cubic-bezier(.4,0,.2,1);border-radius:4px;}
+.card{background:var(--card);border-radius:16px;padding:2.5rem;box-shadow:0 20px 25px -5px rgba(0,0,0,.15);animation:fi .4s ease;}
+.qn{font-size:.78rem;font-weight:600;color:var(--primary);text-transform:uppercase;letter-spacing:.08em;margin-bottom:.6rem;display:block;}
+.qt{font-size:1.2rem;font-weight:500;margin-bottom:1.8rem;color:var(--dark);line-height:1.55;}
+.opts{display:flex;flex-direction:column;gap:.8rem;margin-bottom:1.8rem;}
+.ol{display:flex;align-items:center;padding:1rem 1.3rem;border:2px solid #e2e8f0;border-radius:10px;cursor:pointer;transition:all .2s;font-size:1rem;color:#475569;background:#fff;}
+.ol:hover{border-color:#93c5fd;background:#eff6ff;}
+.oi{margin-right:1rem;transform:scale(1.3);accent-color:var(--primary);cursor:pointer;}
+.ol.sel{border-color:var(--primary);background:#eff6ff;color:#1e3a8a;font-weight:500;}
+.ol.ok{border-color:var(--success);background:#ecfdf5;color:#065f46;font-weight:600;}
+.ol.err{border-color:var(--danger);background:#fef2f2;color:#991b1b;}
+.eb{border-radius:12px;padding:1.3rem;margin-bottom:1.4rem;display:none;animation:sd .3s ease;border-left:5px solid transparent;}
+.eb.show{display:block;}
+.eb.ok{border-left-color:var(--success);background:#ecfdf5;}
+.eb.err{border-left-color:var(--danger);background:#fef2f2;}
+.eh{font-family:'Outfit',sans-serif;font-size:1.05rem;font-weight:600;margin-bottom:.4rem;}
+.eb.ok .eh{color:#059669;}.eb.err .eh{color:#dc2626;}
+.et{color:#334155;font-size:.98rem;line-height:1.6;}
+.et strong{color:#0f172a;}
+.acts{display:flex;justify-content:flex-end;gap:1rem;}
+.btn{padding:.85rem 1.7rem;font-size:1rem;font-weight:600;border-radius:10px;border:none;cursor:pointer;transition:all .2s;font-family:'Outfit',sans-serif;}
+.ba{background:var(--primary);color:white;box-shadow:0 4px 6px -1px rgba(59,130,246,.4);}
+.ba:hover{background:var(--primary-hover);transform:translateY(-2px);}
+.ba:disabled{background:#94a3b8;cursor:not-allowed;transform:none;box-shadow:none;}
+.bo{background:transparent;border:2px solid #cbd5e1;color:#475569;}
+.bo:hover{border-color:var(--primary);color:var(--primary);}
+
+/* SUMMARY */
+#sum{display:none;background:var(--card);border-radius:16px;padding:4rem 3rem;text-align:center;box-shadow:0 25px 50px -12px rgba(0,0,0,.2);animation:fi .5s ease;}
+#sum h2{font-size:2.3rem;color:var(--dark);margin-bottom:.6rem;}
+.sc{width:160px;height:160px;border-radius:50%;background:conic-gradient(var(--success) var(--pct),#e2e8f0 0);display:flex;justify-content:center;align-items:center;margin:2rem auto;}
+.si{width:140px;height:140px;border-radius:50%;background:white;display:flex;flex-direction:column;justify-content:center;align-items:center;color:var(--dark);}
+.si h3{font-size:2rem;line-height:1;}
+.si span{font-size:.8rem;color:#64748b;font-weight:500;text-transform:uppercase;}
+.sa{display:flex;gap:1rem;justify-content:center;margin-top:2.5rem;flex-wrap:wrap;}
+@keyframes fi{from{opacity:0}to{opacity:1}}
+@keyframes up{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}
+@keyframes sd{from{opacity:0;transform:translateY(-10px)}to{opacity:1;transform:translateY(0)}}
+@media(max-width:600px){
+  .card{padding:1.5rem;}#landing{padding:3rem 1.5rem;}#landing h1{font-size:2rem;}
+  .ph{flex-direction:column;gap:.5rem;}.sa{flex-direction:column.}}
+</style>
+</head>
+<body>
+<div class="app">
+
+<div id="landing">
+  <svg style="width:56px;height:56px;margin-bottom:1.2rem;color:#60a5fa;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"/>
+  </svg>
+  <div class="sub">Portal de Formación — ECU 911</div>
+  <h1>Simulador Institucional<br>Videovigilancia PVG_2026</h1>
+  <p>Preguntas reales de las evaluaciones oficiales por módulo. Responde y recibe retroalimentación pedagógica inmediata en cada pregunta.</p>
+  <div class="stats">
+    <div class="stat"><div class="n">66</div><div class="l">Preguntas</div></div>
+    <div class="stat"><div class="n">6</div><div class="l">Módulos</div></div>
+    <div class="stat"><div class="n">100%</div><div class="l">Oficial</div></div>
+  </div>
+  <button class="btn-start" id="btn-iniciar" onclick="startModule()">▶ Iniciar Simulador</button>
+</div>
+
+<div id="quiz">
+  <div class="ph">
+    <div class="pt" id="pt">Pregunta 1 de 66</div>
+    <div class="pc"><div class="pb" id="pb"></div></div>
+  </div>
+  <div id="qra"></div>
+</div>
+
+<div id="sum">
+  <h2 id="stitle">¡Simulador Completado!</h2>
+  <p style="color:#64748b;font-size:1rem;">Has finalizado todas las preguntas del simulador PVG_2026.</p>
+  <div class="sc" id="sc">
+    <div class="si">
+      <h3 id="stext">0/66</h3>
+      <span>Puntos</span>
+    </div>
+  </div>
+  <p id="smsg" style="font-size:1.1rem;font-weight:500;color:#334155;margin-bottom:.5rem;"></p>
+  <div class="sa">
+    <button class="btn bo" onclick="location.reload()">↩ Volver al Inicio</button>
+    <button class="btn ba" id="btn-exp" onclick="exportMD()">⬇ Exportar Resultados</button>
+  </div>
+</div>
+
+</div>
+<script src="questions_data.js"></script>
+<script>
+let idx=0,score=0,failed=[];
+const lv=document.getElementById('landing'),qv=document.getElementById('quiz'),sv=document.getElementById('sum');
+const qra=document.getElementById('qra'),pb=document.getElementById('pb'),pt=document.getElementById('pt');
+
+function startModule(){lv.style.display='none';qv.style.display='block';render(0);}
+
+function render(i){
+  qra.innerHTML='';idx=i;
+  const q=questions[i];
+  pt.innerText=`Pregunta ${i+1} de ${questions.length}`;
+  pb.style.width=((i/questions.length)*100)+'%';
+  const c=document.createElement('div');c.className='card';
+  let oh='';
+  q.options.forEach((o,j)=>{
+    oh+=`<label class="ol" id="l${j}"><input type="radio" name="cq" value="${o.replace(/"/g,'&quot;')}" class="oi" onchange="sel()">${o}</label>`;
+  });
+  c.innerHTML=`
+    <span class="qn">Pregunta ${i+1} de ${questions.length}</span>
+    <div class="qt">${q.text}</div>
+    <div class="opts">${oh}</div>
+    <div class="eb" id="eb">
+      <div class="eh" id="eh"></div>
+      <div class="et"><strong>Respuesta correcta: ${q.correct}</strong><br><br><span>${q.explanation}</span></div>
+    </div>
+    <div class="acts">
+      <button class="btn ba" id="bv" onclick="verify()" disabled>Verificar Respuesta</button>
+      <button class="btn ba" id="bn" style="display:none" onclick="nxt()">${i===questions.length-1?'🏁 Ver Resultados':'Siguiente →'}</button>
+    </div>`;
+  qra.appendChild(c);
+}
+
+window.sel=function(){
+  const bv=document.getElementById('bv');if(bv)bv.disabled=false;
+  document.querySelectorAll('.ol').forEach(l=>l.classList.remove('sel'));
+  const ch=document.querySelector('input[name="cq"]:checked');
+  if(ch)ch.closest('.ol').classList.add('sel');
+};
+
+window.verify=function(){
+  const ch=document.querySelector('input[name="cq"]:checked');if(!ch)return;
+  const ans=ch.value,q=questions[idx],ok=(ans===q.correct);
+  document.querySelectorAll('input[name="cq"]').forEach(i=>i.disabled=true);
+  document.getElementById('bv').style.display='none';
+  document.getElementById('bn').style.display='inline-block';
+  document.querySelectorAll('.ol').forEach(l=>{
+    const v=l.querySelector('input').value;
+    if(v===q.correct)l.classList.add('ok');
+    else if(l.querySelector('input').checked&&!ok)l.classList.add('err');
+  });
+  const eb=document.getElementById('eb'),eh=document.getElementById('eh');
+  if(ok){score++;eb.classList.add('show','ok');eh.innerHTML='✅ ¡Respuesta Correcta!';}
+  else{failed.push(q);eb.classList.add('show','err');eh.innerHTML='❌ Respuesta Incorrecta';}
+};
+
+window.nxt=function(){
+  if(idx+1<questions.length)render(idx+1);else showSum();
+};
+
+function showSum(){
+  qv.style.display='none';sv.style.display='block';
+  const p=(score/questions.length)*100;
+  document.getElementById('sc').style.setProperty('--pct',p.toFixed(1)+'%');
+  document.getElementById('stext').innerText=`${score}/${questions.length}`;
+  const m=document.getElementById('smsg');
+  if(p>=80)m.innerText='¡Excelente rendimiento! Dominas los protocolos de videovigilancia.';
+  else if(p>=50)m.innerText='Buen intento. Repasa las preguntas falladas para reforzar tu preparación.';
+  else m.innerText='Necesitas repasar los conceptos con más detalle. ¡Inténtalo de nuevo!';
+}
+
+window.exportMD=function(){
+  let md=`# Resultados — Simulador PVG_2026 Videovigilancia ECU 911\n\n**Puntuación:** ${score} / ${questions.length} (${Math.round((score/questions.length)*100)}%)\n\n---\n\n`;
+  if(failed.length>0){
+    md+=`## Preguntas para repasar (${failed.length})\n\n`;
+    failed.forEach((q,i)=>{
+      md+=`### ${i+1}. ${q.text}\n\n✅ **Respuesta correcta:** ${q.correct}\n\n> **Explicación:** ${q.explanation}\n\n---\n\n`;
+    });
+  }else{md+='## ¡Perfecto! No fallaste ninguna pregunta.\n';}
+  const b=new Blob([md],{type:'text/markdown'});
+  const a=document.createElement('a');a.href=URL.createObjectURL(b);a.download='Resultados_PVG2026.md';a.click();
+};
+</script>
+</body>
+</html>

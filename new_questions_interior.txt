@@ -1,0 +1,144 @@
+        {
+            "text": "¿Quién debe registrar las novedades operativas o disciplinarias detectadas durante el turno en la bitácora correspondiente?",
+            "options": ["a. Instituciones articuladas", "b. Despacho", "c. El Analista de Operaciones (Videovigilancia)", "d. Ninguno"],
+            "correct": "c. El Analista de Operaciones (Videovigilancia)",
+            "explanation": "El Analista de Operaciones funge como el supervisor o responsable del grupo durante el turno, por lo cual documenta de manera obligatoria las incidencias o novedades disciplinarias de los evaluadores."
+        },
+        {
+            "text": "¿El objetivo del procedimiento busca precautelar la seguridad y bienestar de la ciudadanía?",
+            "options": ["Verdadero", "Falso"],
+            "correct": "Verdadero",
+            "explanation": "El fin último de las operaciones de videovigilancia institucional es garantizar la prevención y respuesta oportuna para salvaguardar vidas y bienes ciudadanos."
+        },
+        {
+            "text": "Seleccione las respuestas correctas. ¿Cuál de los siguientes es un lugar de interés?",
+            "options": ["a. Estaciones espaciales", "b y c. Paradas de bus y Centros de diversión", "d. Propiedad privada"],
+            "correct": "b y c. Paradas de bus y Centros de diversión",
+            "explanation": "Las paradas de bus y centros de diversión presentan concurrencia pública y mayor vulnerabilidad, categorizándose como lugares de interés prioritario para el paneo preventivo de cámaras."
+        },
+        {
+            "text": "Durante el monitoreo de cámaras, el evaluador debe utilizar:",
+            "options": ["a. Paneo automático o control manual de la cámara", "b. El celular personal", "c. Pantallas de televisión", "d. Audífonos con música"],
+            "correct": "a. Paneo automático o control manual de la cámara",
+            "explanation": "El Evaluador debe operar activamente la videovigilancia mediante el uso directo de los mandos PTZ (manual) o activando las secuencias de paneo automatizado (patrullaje virtual)."
+        },
+        {
+            "text": "¿La configuración del paneo automático se basa únicamente en la marca de la cámara?",
+            "options": ["Verdadero", "Falso"],
+            "correct": "Falso",
+            "explanation": "La configuración se adapta a las condiciones geográficas, lugares de interés (bancos, parques) y vulnerabilidades del entorno, no simplemente al fabricante del equipo."
+        },
+        {
+            "text": "¿En qué sistemas se debe modificar el nombre de la cámara para identificar la megafonía IP?",
+            "options": ["a. Software de Video Vigilancia y GIS", "b. Procesador de texto", "c. Sistema de nómina", "d. Redes sociales"],
+            "correct": "a. Software de Video Vigilancia y GIS",
+            "explanation": "Los nombres y nomenclaturas de las herramientas tecnológicas se reflejan en el integrador VMS (Video Management Software) y el mapa interconectado (GIS) para un rápido acceso."
+        },
+        {
+            "text": "¿El alcance se limita solamente a la instalación física de las cámaras?",
+            "options": ["Verdadero", "Falso"],
+            "correct": "Falso",
+            "explanation": "El alcance abarca desde el conocimiento de parámetros, configuración de paneo automático y monitoreo permanente, superando la sola instalación del poste."
+        },
+        {
+            "text": "En escenarios deportivos durante eventos se recomienda:",
+            "options": ["a. Apagar la cámara", "b. Monitoreo manual de graderíos", "c. Dejar en automático siempre", "d. Ninguna de las anteriores"],
+            "correct": "b. Monitoreo manual de graderíos",
+            "explanation": "Los graderíos y accesos de estadios requieren paneos interactivos, dirigidos y minuciosos (manuales) debido al comportamiento dinámico de las masas y posibles disturbios."
+        },
+        {
+            "text": "Cuando el Evaluador detecta un incidente o emergencia debe:",
+            "options": ["a. Informar al área de despacho", "b. Comunicar verbalmente al Analista de Operaciones Zonal/ Local (videovigilancia)", "c. Enviar directamente la ficha electrónica"],
+            "correct": "b. Comunicar verbalmente al Analista de Operaciones Zonal/ Local (videovigilancia)",
+            "explanation": "Según la evaluación institucional, la comunicación verbal alerta inmediatamente al supervisor para coordinar apoyos, aunque paralelamente se genere la plataforma o ficha."
+        },
+        {
+            "text": "¿Qué letra se incluye en la nomenclatura de la cámara para identificar que posee servicio de megafonía IP?",
+            "options": ["a. P", "b. M", "c. S", "d. V"],
+            "correct": "b. M",
+            "explanation": "Institucionalmente, la adición del sufijo o identificador 'M' en el código de la cámara indica habilitación del canal de Megafonía IP."
+        },
+        {
+            "text": "¿El paneo debe ejecutarse con una velocidad y zoom que permita distinguir mediante visión periférica actividades de interés?",
+            "options": ["Verdadero", "Falso"],
+            "correct": "Verdadero",
+            "explanation": "Un paneo demasiado rápido emborrona la imagen (motion blur) impidiendo la identificación. Debe ser balanceado para cubrir amplia zona pero permitiendo la detección real."
+        },
+        {
+            "text": "¿Una emergencia es un evento que pone en peligro la vida de las personas, los bienes o la continuidad de los servicios y requiere atención inmediata?",
+            "options": ["Verdadero", "Falso"],
+            "correct": "Verdadero",
+            "explanation": "Esta es la definición doctrinaria fundamental que separa las incidencias normales o servicios ciudadanos básicos, de una emergencia con prioridad de atención."
+        },
+        {
+            "text": "¿La herramienta de megafonía IP permite emitir mensajes de alerta a la ciudadanía en situaciones de emergencia?",
+            "options": ["Verdadero", "Falso"],
+            "correct": "Verdadero",
+            "explanation": "Esa es su función primaria: actuar como altavoz preventivo o de emergencia a nivel de calle desde la perspectiva del videovigilador."
+        },
+        {
+            "text": "¿Cuál es una responsabilidad dentro del alcance?",
+            "options": ["a. Videovigilancia y detección de incidentes", "b. Decoración de la sala de monitoreo", "c. Limpieza de las cámaras", "d. Venta de equipos"],
+            "correct": "a. Videovigilancia y detección de incidentes",
+            "explanation": "La operación básica es estrictamente mantener el monitoreo visual proactivo y captar posibles o actuales eventos en curso."
+        },
+        {
+            "text": "El monitoreo de las cámaras de videovigilancia, la detección de eventos preventivos e incidentes, y el direccionamiento de la ficha a la(s) institución(es) articulada(s) al Servicio Integrado de Seguridad ECU 911 no forma parte del Procedimiento de Video Vigilancia.",
+            "options": ["Verdadero", "Falso"],
+            "correct": "Falso",
+            "explanation": "Sí forma parte del procedimiento esencial y de hecho engloba el núcleo de responsabilidades de las áreas operativas interconectadas."
+        },
+        {
+            "text": "¿El monitoreo del incidente finaliza inmediatamente después de enviar la ficha electrónica?",
+            "options": ["Verdadero", "Falso"],
+            "correct": "Falso",
+            "explanation": "El seguimiento de seguridad se mantiene activo provisto de retroalimentación en circuito hasta la mitigación y posterior cierre operativo oficial en sistema."
+        },
+        {
+            "text": "Los lugares de interés se identifican principalmente porque:",
+            "options": ["a. Tienen mayor iluminación", "b. Son lugares con cámaras nuevas", "c. Son lugares turísticos", "d. Son zonas con mayor vulnerabilidad a delitos"],
+            "correct": "d. Son zonas con mayor vulnerabilidad a delitos",
+            "explanation": "La priorización en cámaras predeterminadas se asigna basándose en la inteligencia antidelincuencial y su mapa de calor (vulnerabilidad de zona)."
+        },
+        {
+            "text": "¿Los eventos de emergencia están relacionados con incidentes detectados como T2 o T3?",
+            "options": ["Verdadero", "Falso"],
+            "correct": "Verdadero",
+            "explanation": "Las capturas reactivas (T2) o de perfilamiento preventivo (T3) desde cámara desencadenan atenciones prioritarias interconectadas con el despacho."
+        },
+        {
+            "text": "¿La presencia de unidades de atención de emergencia puede ser considerada una actividad de interés?",
+            "options": ["Verdadero", "Falso"],
+            "correct": "Verdadero",
+            "explanation": "Visualizar ambulancias, patrullas de policía o motobombas en el área sin un suceso previo advertido sirve para apoyar inmediatamente a través del sistema."
+        },
+        {
+            "text": "¿El Evaluador de Operaciones de Videovigilancia debe justificar cualquier Cámara PTZ estática que deje sin justificación alguna?",
+            "options": ["Verdadero", "Falso"],
+            "correct": "Verdadero",
+            "explanation": "Dejar la cámara apuntando a una pared o punto ciego es ineficiencia. Su reposo no justificado es auditable y motivo de observación."
+        },
+        {
+            "text": "Las cámaras térmicas deben permanecer:",
+            "options": ["a. Girando continuamente", "b. Detenidas en toma panorámica", "c. En movimiento constante", "d. Solo en zoom"],
+            "correct": "b. Detenidas en toma panorámica",
+            "explanation": "Debido a su principio de calor, una lente en amplio contexto facilita al software marcar diferencial de grados sin desajustarse por el contínuo movimiento mecánico."
+        },
+        {
+            "text": "¿Quién debe modificar el nombre de la cámara en la plataforma tecnológica para identificar la megafonía IP?",
+            "options": ["a. Dirección Zonal de Tecnología y Soporte / Unidad Local de Soporte Tecnológico", "b. Policía Nacional", "c. Operadores de radio", "d. Personal de seguridad privada"],
+            "correct": "a. Dirección Zonal de Tecnología y Soporte / Unidad Local de Soporte Tecnológico",
+            "explanation": "Las modificaciones nativas en el árbol de base de datos son de estricta competencia del personal de sistemas local y zonal para evitar averías del GIS."
+        },
+        {
+            "text": "El alcance del documento incluye:",
+            "options": ["a. Solo la compra de equipos", "b. El conocimiento de características y parámetros de las cámaras", "c. Solo el mantenimiento", "d. Solo la instalación eléctrica"],
+            "correct": "b. El conocimiento de características y parámetros de las cámaras",
+            "explanation": "El Evaluador requiere un amplio dominio de su herramienta a fin de explotar resoluciones, distancias focales y presets para blindar el territorio."
+        },
+        {
+            "text": "¿Las instituciones públicas pueden presentar manifestaciones que pongan en riesgo el edificio?",
+            "options": ["Verdadero", "Falso"],
+            "correct": "Verdadero",
+            "explanation": "Por ello, se configuran como un punto de alto interés y perfilamiento donde confluyen concentraciones de masas con potencial de escalar o descontrolarse."
+        }
